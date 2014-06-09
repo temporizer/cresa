@@ -1,0 +1,22 @@
+aside {
+	display: block;
+}
+
+
+aside {
+	float: none;
+	clear: both;
+	width: 100%;
+}
+.container {
+	margin-top: 35px;
+}
+#intro {
+	width: 100%;
+
+}
+
+footer {
+	
+
+}
