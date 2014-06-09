@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage wp-starter-template
+ * @subpackage Cresa
  */
 
 // Register Three Menus: Main Menu, Sub Menu, Footer Menu

@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage wp-starter-template
+ * @subpackage Cresa
  * Template Name:  Sidebar
  */
 
