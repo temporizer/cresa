@@ -11,10 +11,12 @@ aside {
 .container {
 	margin-top: 35px;
 }
-#intro {
+#intro,#mission {
 	width: 100%;
 
 }
+
+
 
 footer {
 	
