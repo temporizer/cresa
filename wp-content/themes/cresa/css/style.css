@@ -55,6 +55,10 @@ header h1 {
 	background:#F6BD8D;
 }
 
+#banner img {
+	width: 100%;
+}
+
 #building {
 	margin:0 0 7px 0;
 	padding:0;

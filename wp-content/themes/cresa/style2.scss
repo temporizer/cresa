@@ -1,0 +1,143 @@
+/* 
+Project colors: 
+	blue-grey hex: #3c486d; 
+	white #fff; 
+	black #000;
+	dark blue #242B41; 
+	med blue (nav) #636D8A;
+	peach #F6BD8D; rgb(246,189,141);
+	grey (aside) #eaeaea; 
+*/
+
+$darkBlue: #242B41;
+
+body {
+	background-color: $darkBlue;
+	font-family: 'Maven Pro', sans-serif;
+	padding: 0;
+	margin:0;
+	max-width: 1200px;
+}
+
+html {
+	padding: 0;
+	overflow: visible;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	color: rgba(255,255,255,0.8);
+}
+a:hover {
+	color: rgba(255,255,255,1);
+}
+
+
+header .menu {
+	height: 45px;
+	width: 100%;
+	// background-color: green;
+	font-size: 18px;
+	border-bottom: 1px solid rgba(246,189,141,0.25);
+	cursor: pointer;
+}
+
+header .menu span {
+	position: relative;
+	z-index: 99;
+	// border: 1px solid red;
+	box-sizing: border-box;
+	display: block;
+	padding-top: 10px;
+	padding-left: 15px;
+	height: 45px;
+	color: rgba(255,255,255,0.8);
+
+	
+}
+header .menu-icon {
+	color: rgb(246,189,141);
+	font-size: 25px;
+	position: absolute;
+	z-index: 0;
+	top: 6px;
+	right: 15px;
+}
+#nav {
+	position: relative;
+}
+#nav ul {
+		position: absolute;
+	display: none;
+		font-weight: 700;
+		// border: 1px solid tomato;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		background-color: $darkBlue;
+
+		width: 100%;
+		li {
+			// border: 1px solid yellow;
+			height: 60px;
+			padding: 0 0 0 15px;
+			border-bottom: 1px solid rgba(246,189,141,0.25);
+			a {
+				display: block;
+				height: 100%;
+			}				
+		}
+
+		li:hover {
+			background-color: #3c486d;
+		}
+
+	img {
+		display: none;
+	}
+}
+
+.placeholder {
+	height: 80px;
+	width: 100%;
+	background-color: red;
+}
+
+@media (min-width: 900px) {
+	$w:100%;
+	#nav{
+		text-align: center;
+	}
+	#nav ul {
+		display: initial;
+		position: relative;
+		width: 100%;
+		background-color: $darkBlue;
+
+
+		li {
+			background-color: $darkBlue;
+			display: inline-block;
+			vertical-align: top;
+			border: none;
+			height: 120px;
+			width: $w/9;
+			margin: 0;
+			padding: 8px 0;
+			text-align: center;
+
+			img {
+				display: initial;
+				display: block;
+				margin: 0 auto;
+				
+				
+
+			}
+		}
+	}
+	.menu {
+		display: none;
+	}
+}

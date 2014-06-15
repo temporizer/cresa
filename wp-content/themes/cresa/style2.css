@@ -1,0 +1,109 @@
+/* 
+Project colors: 
+	blue-grey hex: #3c486d; 
+	white #fff; 
+	black #000;
+	dark blue #242B41; 
+	med blue (nav) #636D8A;
+	peach #F6BD8D; rgb(246,189,141);
+	grey (aside) #eaeaea; 
+*/
+/*body {
+  background-color: #242b41;
+  font-family: 'Maven Pro', sans-serif;
+  padding: 0;
+  margin: 0;
+  max-width: 1200px; }
+
+html {
+  padding: 0;
+  overflow: visible; }
+*/
+header a {
+  color: white;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8); }
+
+header a:hover {
+  color: white; }
+
+header .menu {
+  height: 45px;
+  width: 100%;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(246, 189, 141, 0.25);
+  cursor: pointer; }
+
+header .menu span {
+  position: relative;
+  z-index: 99;
+  box-sizing: border-box;
+  display: block;
+  padding-top: 10px;
+  padding-left: 15px;
+  height: 45px;
+  color: rgba(255, 255, 255, 0.8); }
+
+header .menu-icon {
+  color: #f6bd8d;
+  font-size: 25px;
+  position: absolute;
+  z-index: 0;
+  top: 6px;
+  right: 15px; }
+
+#nav {
+  position: relative; }
+
+#nav ul {
+  position: absolute;
+  display: none;
+  font-weight: 700;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #242b41;
+  width: 100%; }
+  #nav ul li {
+    height: 60px;
+    padding: 0 0 0 15px;
+    border-bottom: 1px solid rgba(246, 189, 141, 0.25); }
+    #nav ul li a {
+      display: block;
+      height: 100%; }
+  #nav ul li:hover {
+    background-color: #3c486d; }
+  #nav ul img {
+    display: none; }
+
+.placeholder {
+  height: 80px;
+  width: 100%;
+  background-color: red; }
+
+@media (min-width: 900px) {
+  #nav {
+    text-align: center; }
+
+  #nav ul {
+    display: initial;
+    position: relative;
+    width: 100%;
+    background-color: #242b41; }
+    #nav ul li {
+      background-color: #242b41;
+      display: inline-block;
+      vertical-align: top;
+      border: none;
+      height: 120px;
+      width: 11.11111%;
+      margin: 0;
+      padding: 8px 0;
+      text-align: center; }
+      #nav ul li img {
+        display: initial;
+        display: block;
+        margin: 0 auto; }
+
+  .menu {
+    display: none; } }

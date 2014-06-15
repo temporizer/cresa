@@ -7,28 +7,13 @@
 
 
 <footer>
-				<div class="search">	
-					<label for="search">Search:</label> <input type="text" name="search" id="search" size="16">
-				</div>
-				
-				<div id="social">
-					<a href="mobileapp.html" title="mobile apps" id="mobile"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/phone.png" alt="mobile phone icon by Jino & Christine"></a>
-
-					<a href="http://www.cresa911.blogspot.com/" title="Blog" id="blog"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/blogspot.png" alt="blog icon "></a> <!-- credit by www.alessandracravero.it -->
-					<a href="https://www.facebook.com/CRESA.911" title="Facebook" id="facebook"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/fb.png" alt="facebook logo by www.alessandracravero.it"></a>
-					<a href="https://twitter.com/cresa" title="Twitter icon By www.alessandracravero.it" id="twitter"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter.png" alt="twitter logo by www.alessandracravero.it"></a>
-					
-					
-					<a href="http://feeds.feedburner.com/cresa911" title="rss" id="rss"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/rss.png" alt="rss logo by www.alessandracravero.it"></a>
-				</div> <!-- end social -->
-				
 				<div class="container finfo">
 					<div class="row">
 	                                  <div class="col-sm-3" id="location">
-							<p>710 West 13th Street</p>
-							<p>Vancouver, WA 98660-2810</p>
-							<p>Phone: (360) 737-1911</p>
-							<p>Fax: (360) 694-1954</p>
+							<p>710 West 13th Street<br>
+									Vancouver, WA 98660-2810</p>
+							<p>Phone: (360) 737-1911<br>
+							Fax: (360) 694-1954</p>
 							<p>Email: cresa@clark.wa.gov</p>
 						</div> <!-- end location -->
 
@@ -46,6 +31,8 @@
 						
 						<!-- <div class="col-sm-2"></div> -->
 						<div class="col-sm-3" id="footnav1">
+							<?php wp_nav_menu( array( 'theme_location' => 'footer-left-menu' ) ); ?>
+
 							<ul>
 								<li><a href="records.html" title="Records Request">Records Request</a></li>
 								<li><a href="when911.html" title="When to call">When to call</a></li>							
@@ -56,6 +43,7 @@
 						</div> <!-- footnav1 -->
 						
 						<div class="col-sm-3" id="footnav2">
+							<?php wp_nav_menu( array( 'theme_location' => 'footer-right-menu' ) ); ?>
 							<ul>
 								<li><a href="prepared.html" title="Emergency Preparedness">Be Prepared</a></li>
 								<li><a href="getinvolved.html" title="Get Involved">Get Involved</a></li>
@@ -67,13 +55,22 @@
 				</div>
 
 				
-				
+								<div id="social">
+					<a href="mobileapp.html" title="mobile apps" id="mobile"><img src="<?php bloginfo('template_url'); ?>/images/phone.png" alt="mobile phone icon by Jino & Christine"></a>
+
+					<a href="http://www.cresa911.blogspot.com/" title="Blog" id="blog"><img src="<?php bloginfo('template_url'); ?>/images/blogspot.png" alt="blog icon "></a> <!-- credit by www.alessandracravero.it -->
+					<a href="https://www.facebook.com/CRESA.911" title="Facebook" id="facebook"><img src="<?php bloginfo('template_url'); ?>/images/fb.png" alt="facebook logo by www.alessandracravero.it"></a>
+					<a href="https://twitter.com/cresa" title="Twitter icon By www.alessandracravero.it" id="twitter"><img src="<?php bloginfo('template_url'); ?>/images/twitter.png" alt="twitter logo by www.alessandracravero.it"></a>
+					
+					
+					<a href="http://feeds.feedburner.com/cresa911" title="rss" id="rss"><img src="<?php bloginfo('template_url'); ?>/images/rss.png" alt="rss logo by www.alessandracravero.it"></a>
+				</div> <!-- end social -->
 			</footer>
 		</div> <!-- end pagewrapper -->
 		<!-- slimmenu navigation script -->
-		<script src="<?php bloginfo('stylesheet_directory') ?>/js/jquery-2.0.3.min.js"></script>
+		<script src="<?php bloginfo('template_url') ?>/js/jquery-2.0.3.min.js"></script>
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-		<script src="<?php bloginfo('stylesheet_directory') ?>/js/jquery.slimmenu.min.js"></script>
+		<script src="<?php bloginfo('template_url') ?>/js/jquery.slimmenu.min.js"></script>
 		<!-- move to new js file in js folder after testing -->
 		<script>
 		$('#navigation').slimmenu(

@@ -2,6 +2,7 @@
 /**
  * @package WordPress
  * @subpackage Cresa
+ * Template Name: Front Page
  */
 
 get_header(); ?>
@@ -13,29 +14,20 @@ get_header(); ?>
                 </div> <!-- end intro -->
 
                 <aside id="aside">
-                    <h2>Did You Know</h2>
-                    <p>You can sign up to receive emergency alerts by phone and email.</p>
-                    <a href="alerts.html" class="button">Sign Up</a>
-
+                		<?php dynamic_sidebar('cta_home'); ?>
                 </aside>
                 <div class="clear">
                 </div><!-- end clear -->
                 <div class="container">
                     <div class="row circles">
                         <div class="col-md-4">
-                            <ul class="widget_content">
-                                <?php dynamic_sidebar(1); ?>
-                             </ul>
+                                <?php dynamic_sidebar('left_home'); ?>
                      </div><!-- end record -->
                         <div class="col-md-4">
-                            <ul class="widget_content">
-                                <?php dynamic_sidebar(2); ?>
-                            </ul>
+                                <?php dynamic_sidebar('center_home'); ?>
                         </div><!-- end when911 -->
                         <div class="col-md-4">
-                            <a class="fpb" href="em.html" title="emergency management"><img src="<?php bloginfo('template_url'); ?>/images/star2.png" alt="star" ></a>
-                            <h2>Prepare, Be Ready</h2>
-                            <p>and get involved! Learn how to be prepared for an emergency. <a href="em.html" title="emergency management">Learn more...</a></p>
+                               <?php dynamic_sidebar('right_home'); ?> 
                         </div><!-- end prepared -->
                     </div>
                 </div>

@@ -2,7 +2,6 @@
 /**
  * @package WordPress
  * @subpackage Cresa
- * Template Name:  Sidebar
  */
 ?>
     <ul id="sidebar_list">
