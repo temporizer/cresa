@@ -68,20 +68,19 @@
 			</footer>
 		</div> <!-- end pagewrapper -->
 		<!-- slimmenu navigation script -->
-		<script src="<?php bloginfo('template_url') ?>/js/jquery-2.0.3.min.js"></script>
-		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-		<script src="<?php bloginfo('template_url') ?>/js/jquery.slimmenu.min.js"></script>
+
+		<!-- <script src="<?php bloginfo('template_url') ?>/js/jquery.slimmenu.min.js"></script> -->
 		<!-- move to new js file in js folder after testing -->
 		<script>
-		$('#navigation').slimmenu(
-			{
-			    resizeWidth: '900',
-			    collapserTitle: 'Main Menu',
-			    animSpeed: 'medium',
-			    easingEffect: null,
-			    indentChildren: false,
-			    childrenIndenter: '&nbsp;'
-			});
+		// $('#navigation').slimmenu(
+		// 	{
+		// 	    resizeWidth: '900',
+		// 	    collapserTitle: 'Main Menu',
+		// 	    animSpeed: 'medium',
+		// 	    easingEffect: null,
+		// 	    indentChildren: false,
+		// 	    childrenIndenter: '&nbsp;'
+		// 	});
 		</script>
 					
 <?php wp_footer(); ?>

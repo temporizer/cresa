@@ -15,10 +15,10 @@
 			$("#navigation").slideToggle("slow");
 		})
 		$(window).resize(function(){  
-	    var w = $(window).width();  
-	    if(w > 900) {  
-	        $("#nav").removeAttr('style');
-	    }  
+	    		var w = $(window).width();  
+	    		if(w > 900) {  
+	        		$("#nav").removeAttr('style');
+	   	}  
 	});
 	})
 </script>
@@ -26,7 +26,7 @@
 </head>
 <body>
 <header>
-<div class="menu">
+<div class="menu-mobile">
 	<span>Main Menu</span>
 	<div class="menu-icon"><i class="fa fa-bars"></i></div>
 </div>

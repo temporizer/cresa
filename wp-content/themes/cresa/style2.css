@@ -20,21 +20,24 @@ html {
   overflow: visible; }
 */
 header a {
-  color: white;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.8); }
+  color: white !important;
+  text-decoration: none !important;
+  color: rgba(255, 255, 255, 0.8) !important; 
+}
 
 header a:hover {
-  color: white; }
+  color: white !important; }
 
-header .menu {
+header .menu-mobile {
   height: 45px;
   width: 100%;
   font-size: 18px;
-  border-bottom: 1px solid rgba(246, 189, 141, 0.25);
-  cursor: pointer; }
+  border-top: 5px solid rgba(246, 189, 141, 1);
+  cursor: pointer; 
+  position: relative;
+}
 
-header .menu span {
+header .menu-mobile span {
   position: relative;
   z-index: 99;
   box-sizing: border-box;
@@ -44,7 +47,7 @@ header .menu span {
   height: 45px;
   color: rgba(255, 255, 255, 0.8); }
 
-header .menu-icon {
+header .menu-mobile .menu-icon {
   color: #f6bd8d;
   font-size: 25px;
   position: absolute;
@@ -67,7 +70,8 @@ header .menu-icon {
   #nav ul li {
     height: 60px;
     padding: 0 0 0 15px;
-    border-bottom: 1px solid rgba(246, 189, 141, 0.25); }
+    border-bottom: 1px solid rgba(246, 189, 141, 0.25); 
+  }
     #nav ul li a {
       display: block;
       height: 100%; }
@@ -105,5 +109,5 @@ header .menu-icon {
         display: block;
         margin: 0 auto; }
 
-  .menu {
+  .menu-mobile {
     display: none; } }
